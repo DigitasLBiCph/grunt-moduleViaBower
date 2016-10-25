@@ -1,20 +1,13 @@
-/*
-
- */
 
 'use strict';
 
 module.exports = function(grunt) {
- 
-	var pluginName = 'moduleViaBower',
-		globsync = require('glob-whatev'),
-		path = require('path'),
-		fs = require('fs'),
-		jf = require('jsonfile');
+	var pluginName = 'moduleViaBower';
 
 	grunt.registerTask(pluginName, '', function() {
-	    
-	    var fs = require('fs-extra'),
+
+		var path = require('path'),
+			fs = require('fs-extra'),
             cwd = process.cwd(),
 	    	config = grunt.config(pluginName);
 

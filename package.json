@@ -1,0 +1,29 @@
+{
+  "name": "grunt-moduleViaBower",
+  "description": "",
+  "version": "0.0.1",
+  "author": {
+    "name": "Shukri Adams",
+    "email": "shukri.adams@digitaslbi.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DigitasLBiCph/grunt-moduleViaBower.git"
+  },
+  "licenses": [
+    {
+      "url": "https://github.com/DigitasLBiCph/grunt-moduleViaBower.git"
+    }
+  ],
+  "main": "tasks/moduleViaBower.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "dependencies": {
+    "fs-extra" : "0.30.0"
+  },
+  "keywords": []
+}

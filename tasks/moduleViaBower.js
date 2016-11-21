@@ -25,7 +25,13 @@ module.exports = function(grunt) {
 
 	        if (!isClone){
 	            fs.ensureDirSync(targetPath);
-	            fs.copySync(sourcePath, targetPath, { filter : '!.bower.json' });
+	            fs.copySync(sourcePath, targetPath ,{ filter : function(file){
+	            	var name = path.basename(file);
+	            	if (name === '.bower.json')
+	            		return false;
+					return true;
+				}});
+				
 	            console.log('Copied module to ' + configItem.target  + '.');
 	        } else {
 	            console.log('Git found at ' + configItem.target + ', skipping copy.');
